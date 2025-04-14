@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* .registration-form {
+            max-width: 400px;
+            width: 100%;
+        } */
+
+        .registration-form h2 {
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+            margin-left: 60px;
+             width: 800px; 
+        }
+
+
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .form-label {
+            display: block;
+            color: #555;
+            margin-left: 60px;
+            width: 100%;
+            align-content: center;
+        }
+
+        .form-text-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            /* margin-left: 260px; */
+        }
+        .button-div{
+            text-align: center;
+        }
+        .radio-div{
+            display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+        }
+.checkbox-div{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+        button[type="submit"] {
+
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1a13e8;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button[type="reset"] {
+
+padding: 10px;
+border: none;
+border-radius: 5px;
+background-color: #1a13e8;
+color: #fff;
+font-size: 16px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+        button[type="submit"]:hover {
+            background-color: #1a13e8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="container" >
+            <form class="registration-form">
+                <h2> Employee Registration Form</h2>
+                <div class="form-group">
+                    <label class="form-label" for="name">full Name</label>
+                    <input class="form-text-input" type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-text-input" type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="password">Password</label>
+                    <input class="form-text-input" type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="confirm-password">Confirm Password</label>
+                    <input class="form-text-input" type="password" id="confirm-password" name="confirm-password"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="gender">Gender</label>
+                    <div class="radio-div">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+
+
+
+        <div class="form-group">
+            <label class="form-label" for="DOB">DOB</label>
+            <input class="form-text-input" type="date" id="DOB" name="confirm-password" required>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="Mobile">mobile</label>
+            <input class="form-text-input" type="number" id="Mobile" name="confirm-password" required>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="resume">resume</label>
+            <input class="form-text-input" type="file" id="resume" name="choose file" required >
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="physically challenged">physically challenged</label>
+            <div class="checkbox-div">
+                <input class="form-checkbox-input" type="checkbox" id="physically challenged" required >
+                <label>(Check if physically challenged)</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="country">country</label>
+            <input class="form-text-input" type="text" id="confirm-password" name="confirm-password" required>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="city">city</label>
+            <input class="form-text-input" type="text" id="confirm-password" name="confirm-password" required>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="address">address</label>
+            <input class="form-text-input" type="text" id="confirm-password" name="confirm-password" required>
+        </div>
+      <div class="button-div">
+        <button type="submit">Submit</button> 
+        <button type="reset">Clear</button>
+      </div>
+        </form>
+        </div>
+    </body>
+
+</html>
